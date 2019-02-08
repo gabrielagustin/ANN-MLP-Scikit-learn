@@ -1,11 +1,11 @@
 
 # -*- coding: utf-8 -*-
 """
-Created on Fri Jan 25 10:16:04 2018
+Created on Wed Oct 24 10:16:04 2018
 @author: gag 
 
 """
-
+24 oct 2018 08∶28∶40 -03
 
 
 import numpy as np
