@@ -4,6 +4,17 @@
 Created on Wed Oct 24 10:16:04 2018
 @author: gag 
 
+Script que permite obtener la arquitectura y parámetros de la red neuronal, es decir,
+permite encontrar el número adecuado de capas ocultas y neuronas de las mismas, junto a 
+parámetros claves de la red como: tipo de función de activación, velocidad de aprendizaje, penalidad, 
+entre otros. 
+Para realizar esta búsqueda en el espacio de los hiperparámetros se utilizan métodos de optimización, 
+los probados en este script son:
+* Exhaustive Grid Search
+* Randomized Parameter Optimization
+
+
+
 """
 24 oct 2018 08∶28∶40 -03
 
