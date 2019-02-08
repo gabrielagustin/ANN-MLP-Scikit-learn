@@ -1,6 +1,6 @@
 # ANN-MLP-Scikit-learn
 
-Description:
+Description: Artificial Neural Network - Multi-Layer Perceptron as Regressor using scikit-learn 
 
 
 Perceptron multicapa configurado para funcionar como regresor:
