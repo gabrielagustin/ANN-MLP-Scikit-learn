@@ -12,10 +12,10 @@ Perceptron multicapa configurado para funcionar como regresor:
 
 Dependences:
 
-* Python - sklearn
-* Python - pandas
-* Python - NumPy
-* Python - Matplolib
+    python - sklearn
+    python - pandas
+    python - NumPy
+    python - Matplolib
 
 
 Page source:
