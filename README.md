@@ -12,10 +12,7 @@ Perceptron multicapa configurado para funcionar como regresor:
 
 Dependences:
 
-* Geopandas
-* H5py 
-* Pykml
-* Shapely
+* sklearn
 * Pandas
 * NumPy
 * Matplolib
