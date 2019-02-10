@@ -9,6 +9,11 @@ Perceptron multicapa configurado para funcionar como regresor:
  </p>
 
 
+Para realizar esta búsqueda en el espacio de los hiperparámetros se utilizan métodos de optimización, 
+los probados en este caso son:
+* Exhaustive Grid Search
+* Randomized Parameter Optimization
+
 
 Dependences:
 
