@@ -9,8 +9,7 @@ Perceptron multicapa configurado para funcionar como regresor:
  </p>
 
 
-Para realizar esta búsqueda en el espacio de los hiperparámetros se utilizan métodos de optimización, 
-los probados en este caso son:
+Métodos de optimización probados para realizar la búsqueda en el espacio de los hiperparámetros son:
 * Exhaustive Grid Search
 * Randomized Parameter Optimization
 
