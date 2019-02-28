@@ -16,10 +16,11 @@ Métodos de optimización probados para realizar la búsqueda en el espacio de l
 
 Dependences:
 
-    python - sklearn
-    python - pandas
+    python - Sklearn
+    python - Pandas
     python - NumPy
     python - Matplolib
+    python - Statsmodels
 
 
 Page source:

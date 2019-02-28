@@ -1,14 +1,24 @@
 # -*- coding: utf-8 -*-
-import lectura
+"""
+Created on Wed Oct 24 10:16:04 2018
+
+@author: gag 
+
+"""
+
 import numpy as np
-import selection
+import pandas as pd
 from sklearn.neural_network import MLPRegressor
 from sklearn.model_selection import cross_val_score
 import statistics
 import sklearn
-import pandas as pd
 import statsmodels.formula.api as smf
+
+import selection
+import lectura
 import MLPregresor_tuneParameters
+
+
 
 #def mlp(fileCal, fileVal, type, rand):
 def mlp(porc, file, type, rand):
