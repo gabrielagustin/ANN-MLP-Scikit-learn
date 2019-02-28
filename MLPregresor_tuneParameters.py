@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Oct 24 10:16:04 2018
+
 @author: gag 
 
 Script que permite obtener la arquitectura y parámetros de la red neuronal, es decir,
@@ -13,11 +14,7 @@ los probados en este script son:
 * Exhaustive Grid Search
 * Randomized Parameter Optimization
 
-
-
 """
-24 oct 2018 08∶28∶40 -03
-
 
 import numpy as np
 import lectura
@@ -45,11 +42,6 @@ from sklearn.grid_search import RandomizedSearchCV
 
 
 def tune(fileCal, fileVal):
-
-    #file = 'tabla_Completa.csv'
-
-    #fileCal = 'tabla_completa_Calibracion.csv'
-    #fileVal = 'tabla_completa_Validacion.csv'
 
     #dataCal = lectura.lecturaCompleta_etapa2(fileCal)
     #dataVal = lectura.lecturaCompleta_etapa2(fileVal)
