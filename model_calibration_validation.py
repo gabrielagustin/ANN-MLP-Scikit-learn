@@ -7,7 +7,7 @@ import numpy as np
 import statistics
 import sklearn
 import lectura
-import MLPregression
+import MLP
 import Mars
 import copy
 import SMmaps

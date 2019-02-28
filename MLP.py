@@ -16,7 +16,7 @@ import statsmodels.formula.api as smf
 
 import selection
 import lectura
-import MLPregresor_tuneParameters
+import MLP_tuneParameters
 
 
    
@@ -183,7 +183,7 @@ def mlp_SAR_SMAP(porc, file, type, rand):
 #        print("------------------------------------------------------------------------")
 #        print("-tune parameters")
 #        
-#        MLPmodel, yCalMLP, yAproxMLP = MLPregresor_tuneParameters.tune_SAR_SMAP(xTraining,yTraining, xTest, yTest)
+#        MLPmodel, yCalMLP, yAproxMLP = MLP_tuneParameters.tune_SAR_SMAP(xTraining,yTraining, xTest, yTest)
 #        
 #        
 #        print("------------------------------------------------------------------------")
