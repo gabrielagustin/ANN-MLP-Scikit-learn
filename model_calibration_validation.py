@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+#!/usr/bin/python
+"""
+Created on Wed Oct 24 10:16:04 2018
+@author: gag 
+"""
+
+
+
 import pandas as pd
 import statsmodels.formula.api as smf
 import selection
@@ -7,7 +16,7 @@ import numpy as np
 import statistics
 import sklearn
 import lectura
-import MLP
+import MLPregression
 import Mars
 import copy
 import SMmaps

@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
+#!/usr/bin/python
 """
 Created on Wed Oct 24 10:16:04 2018
-
 @author: gag 
-
 """
 
 import numpy as np
