@@ -3,6 +3,13 @@
 """
 Created on Wed Oct 24 10:16:04 2018
 @author: gag 
+
+Script que recibe el archivo .CSV que posee una tabla con las variables de entrada
+junto a la variable de salida. 
+Al conjunto de datos le aplica el modelo: 
+ - Perceptron Multicapa (MLP) como regresor
+ 
+
 """
 
 
