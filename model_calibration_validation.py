@@ -13,18 +13,13 @@ Al conjunto de datos le aplica el modelo:
 """
 
 
-
 import pandas as pd
-import statsmodels.formula.api as smf
 import selection
-import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 import statistics
-import sklearn
 import lectura
 import MLP
-import copy
 import seaborn as sns
 
 
@@ -81,8 +76,6 @@ plt.ylabel('Estimated value [% Vol.]', fontsize=12);
 plt.legend(loc='lower right')
 
 
-
-
 #### Prueba MLP
 
 yTest = np.array(dataTest["SM_CONAE"])
@@ -92,14 +85,9 @@ xTest = dataTest
 
 yAproxMLP = MLPmodel.predict(xTest)
 
-
-
-
 df = pd.DataFrame({'y':yTest,
                    'yAproxMLP':yAproxMLP
                    })
-
-
 
 #dataNew = df[(df.y < 44)]
 #df = dataNew
@@ -116,11 +104,6 @@ plt.ylabel('Estimated value [% Vol.]', fontsize=12);
 # Move the legend to an empty part of the plot
 plt.legend(loc='lower right')
 plt.grid(True)
-
-
-
-
-
 
 plt.show()
 
