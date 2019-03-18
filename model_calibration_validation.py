@@ -87,7 +87,7 @@ plt.legend(loc='lower right')
 
 yTest = np.array(dataTest["SM_CONAE"])
 yTest = 10**(yTest)
-del dataTest["SM_CONAE"!""]
+del dataTest["SM_CONAE"]
 xTest = dataTest
 
 yAproxMLP = MLPmodel.predict(xTest)
