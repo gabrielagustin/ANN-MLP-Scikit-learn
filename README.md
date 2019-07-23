@@ -1,17 +1,17 @@
 # ANN-MLP-Scikit-learn
 
-Multi-Layer Perceptron (MLR) as Regressor:
+Multi-Layer Perceptron (MLP) as Regressor:
 
 <p align="center">
   <img width=450 src="mlp-network.png"/>
  </p>
 
 
-Métodos de optimización probados para realizar la búsqueda en el espacio de los hiperparámetros son:
+Optimization methods tested to search the hyperparameters space are:
 * Exhaustive Grid Search
 * Randomized Parameter Optimization
 
-Más infomación: https://scikit-learn.org/stable/modules/grid_search.html
+More information: https://scikit-learn.org/stable/modules/grid_search.html
 
 Dependences:
 
