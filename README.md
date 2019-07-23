@@ -13,6 +13,7 @@ Métodos de optimización probados para realizar la búsqueda en el espacio de l
 * Exhaustive Grid Search
 * Randomized Parameter Optimization
 
+Más infomación: https://scikit-learn.org/stable/modules/grid_search.html
 
 Dependences:
 
@@ -26,3 +27,5 @@ Dependences:
 
 Page source:
  https://scikit-learn.org/stable/
+
+
