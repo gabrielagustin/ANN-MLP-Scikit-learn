@@ -7,7 +7,26 @@ Multi-Layer Perceptron (MLP) as Regressor:
  </p>
 
 
+Neural network parameters:
+
+- Number of hidden layers and number of neurons per layers
+- Penalty (Alpha)
+- Moment of the descending gradient (Momentun)
+- Initial learning rate
+- Learning rate (‘constant’, ‘invscaling’, ‘adaptive’)
+- Solver (‘lbfgs’, ‘sgd’, ‘adam’)
+
+  ‘lbfgs’ is an optimizer in the family of quasi-Newton methods.
+  ‘sgd’ refers to stochastic gradient descent.
+  ‘adam’ refers to a stochastic gradient-based optimizer proposed by Kingma, Diederik, and Jimmy Ba
+
+Note: there are much more parameters, these are considered the most important
+
+More information: https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html
+
+
 Optimization methods tested to search the hyperparameters space are:
+
 * Exhaustive Grid Search
 * Randomized Parameter Optimization
 
@@ -23,7 +42,5 @@ Dependences:
 
 
 
-Page source:
- https://scikit-learn.org/stable/
 
 
