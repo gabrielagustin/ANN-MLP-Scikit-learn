@@ -11,14 +11,14 @@ Neural network parameters:
 
 - Number of hidden layers and number of neurons per layers
 - Penalty (Alpha)
-- Moment of the descending gradient (Momentun)
 - Initial learning rate
-- Learning rate (‘constant’, ‘invscaling’, ‘adaptive’)
-- Solver (‘lbfgs’, ‘sgd’, ‘adam’)
+- Learning rate ('constant', 'invscaling', 'adaptive')
+- Solver ('lbfgs', 'sgd', 'adam')
+- Moment of the descending gradient (Momentun) -- if we use the 'sgd' solver
 
-  ‘lbfgs’ is an optimizer in the family of quasi-Newton methods.
-  ‘sgd’ refers to stochastic gradient descent.
-  ‘adam’ refers to a stochastic gradient-based optimizer proposed by Kingma, Diederik, and Jimmy Ba
+  'lbfgs' is an optimizer in the family of quasi-Newton methods.
+  'sgd' refers to stochastic gradient descent.
+  'adam' refers to a stochastic gradient-based optimizer proposed by Kingma, Diederik, and Jimmy Ba
 
 Note: there are much more parameters, these are considered the most important
 
