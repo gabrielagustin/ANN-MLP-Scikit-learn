@@ -41,7 +41,7 @@ Data splitting scheme:
 The data set was divided in other three subsets composed by data for training (calibration and validation), and a posteriori test. Data division presented in the following figure:
 
 <p align="center">
-  <img width=650 src="SMAP_L1B_Tb_V_geopandas.png"/>
+  <img width=450 src="ANN-defining-dataset.png"/>
  </p>
 
 Dependences:
