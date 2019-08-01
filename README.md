@@ -15,13 +15,12 @@ Neural network parameters:
 - Activation function for the hidden layer ('identity', 'logistic', 'tanh', 'relu')
 - Learning rate ('constant', 'invscaling', 'adaptive')
 - Solver ('lbfgs', 'sgd', 'adam')
-- validation_fraction
-
-- Moment of the descending gradient (Momentun) -- if we use the 'sgd' solver
-
   'lbfgs' is an optimizer in the family of quasi-Newton methods.
   'sgd' refers to stochastic gradient descent.
   'adam' refers to a stochastic gradient-based optimizer proposed by Kingma and Ba (2014)
+- validation_fraction
+- Moment of the descending gradient (Momentun) -- if we use the 'sgd' solver
+
 
 Note: there are much more parameters, these are considered the most important
 
