@@ -49,7 +49,7 @@ def tune_Grid_Search(xTraining,yTraining, xTest, yTest, solverType):
         - 'lbfgs' is an optimizer in the family of quasi-Newton methods.
         - 'sgd' refers to stochastic gradient descent.
         - 'adam' refers to a stochastic gradient-based optimizer proposed by Kingma, Diederik, and Jimmy Ba
-    """-------------------------------------------------------------------------------------------------
+    """------------------------------------------------------------------------------------------------
     mlp = MLPRegressor()
     ### solver 'lbfgs'
     if(solverType == 'lbfgs'):
