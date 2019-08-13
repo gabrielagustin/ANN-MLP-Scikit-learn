@@ -42,35 +42,40 @@ import statsmodels.formula.api as smf
 
 
 
-def tune_SAR_SMAP(xTraining,yTraining, xTest, yTest):
-
+def tune_Grid_Search(xTraining,yTraining, xTest, yTest, solverType):
+    """-------------------------------------------------------------------------------------------------
+    Exhaustive Grid Search
+    Each solver method has its set of parameters so it separates them. The solver are:
+        - 'lbfgs' is an optimizer in the family of quasi-Newton methods.
+        - 'sgd' refers to stochastic gradient descent.
+        - 'adam' refers to a stochastic gradient-based optimizer proposed by Kingma, Diederik, and Jimmy Ba
+    """-------------------------------------------------------------------------------------------------
     mlp = MLPRegressor()
-    ########-------------------------------------------------------------------------------------------------
-    ######## GridSearchCV
-    ########-------------------------------------------------------------------------------------------------
     ### solver 'lbfgs'
-#    param_grid = {'hidden_layer_sizes': [i for i in itertools.product(range(1,7),repeat=2)],
-#                  'activation': ['relu', 'tanh', 'logistic'],
-#                  'solver': ['lbfgs'],
-#                  'power_t': [0.5],
-#                  'alpha': np.linspace(0.001, 0.1, num=5),
-#                  'max_iter': [5000],
-#                  'early_stopping': [False],
-#                  'warm_start': [False],
-#                  'random_state': [9]
-#                  }
+    if(solverType == 'lbfgs'):
+        param_grid = {'hidden_layer_sizes': [i for i in itertools.product(range(1,7),repeat=2)],
+                        'activation': ['relu', 'tanh', 'logistic'],
+                        'solver': ['lbfgs'],
+                        'power_t': [0.5],
+                        'alpha': np.linspace(0.001, 0.1, num=5),
+                        'max_iter': [5000],
+                        'early_stopping': [False],
+                        'warm_start': [False],
+                        'random_state': [9]
+                        }
     ### solver 'adam'
-#    param_grid = {'hidden_layer_sizes': [i for i in itertools.product(range(3,9),repeat=2)],
-#                  'activation': ['relu', 'tanh', 'logistic'],
-#                  'solver': ['adam'],
-#                  'learning_rate_init':np.linspace(0.001, 0.1, num=5),
-#                  'power_t': [0.5],
-#                  'alpha': np.linspace(0.001, 0.1, num=5),
-#                  'max_iter': [1000],
-#                  'early_stopping': [False],
-#                  'warm_start': [False],
-#                  'random_state': [9]
-#                  }
+    if(solverType == 'adam'):
+        param_grid = {'hidden_layer_sizes': [i for i in itertools.product(range(3,9),repeat=2)],
+                        'activation': ['relu', 'tanh', 'logistic'],
+                        'solver': ['adam'],
+                        'learning_rate_init':np.linspace(0.001, 0.1, num=5),
+                        'power_t': [0.5],
+                        'alpha': np.linspace(0.001, 0.1, num=5),
+                        'max_iter': [1000],
+                        'early_stopping': [False],
+                        'warm_start': [False],
+                        'random_state': [9]
+                        }
     #  {'warm_start': False, 'hidden_layer_sizes': (2, 3), 'activation': 'relu', 'max_iter': 1000, 'power_t': 0.5, 'random_state': 9, 'early_stopping': False, 'alpha': 0.001, 'solver': 'adam', 'learning_rate_init': 0.025750000000000002}
     ### solver 'sgd'
     param_grid = {'hidden_layer_sizes': [i for i in itertools.product(range(3,9),repeat=2)],
