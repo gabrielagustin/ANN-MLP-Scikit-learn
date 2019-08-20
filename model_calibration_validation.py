@@ -20,38 +20,30 @@ import MLP
 import seaborn as sns
 
 
-
 file = "/media/gag/TOURO Mobile/Trabajo_Sentinel_NDVI_CONAE/mediciones_sensores_CONAE_MonteBuey_SMAP/SM_CONAE_Prom/extract_table_2.csv"
-
-
 
 data = lectura.lecturaCompleta_etapa1_SAR_SMAP(file)
 #print data
 
-## se mezclan las observaciones de las tablas
-## semilla para mezclar los datos en forma aleatoria
+#### the observations in the table are mixed
 rand = 0
 np.random.seed(rand)
 dataNew = selection.shuffle(data)
 dataNew = dataNew.reset_index(drop=True)
 
-#### se divide el conjunto de datos para entrenamiento y prueba
+#### the data set is divided for training and testing
 dataTraining, dataTest = train_test_split(data, test_size=0.25)
 
 print("--------------------------------------------------------")
-print("Estadisticas datos de entrenamiento")
+print("Statistics training data")
 print(dataTraining.describe())
 print("--------------------------------------------------------")
-print("Estadisticas datos de Prueba")
+print("Statistics test data")
 print(dataTest.describe())
 print("--------------------------------------------------------")
 
-
-
-
-#### Entrenamiento MLP
+#### MLP training
 MLPmodel, yCalMLP = MLP.mlp_SAR_SMAP(dataTraining)
-
 
 yTraining = dataTraining['SM_CONAE']
 yTraining = 10**(yTraining)
@@ -73,7 +65,7 @@ plt.ylabel('Estimated value [% Vol.]', fontsize=12);
 plt.legend(loc='lower right')
 
 
-#### Prueba MLP
+#### Test MLP
 
 yTest = np.array(dataTest["SM_CONAE"])
 yTest = 10**(yTest)
@@ -88,7 +80,6 @@ df = pd.DataFrame({'y':yTest,
 
 #dataNew = df[(df.y < 44)]
 #df = dataNew
-
 
 fig = plt.figure(2,facecolor="white")
 ax = fig.add_subplot(111)
